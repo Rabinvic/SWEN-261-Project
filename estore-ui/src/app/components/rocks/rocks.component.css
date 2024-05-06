@@ -1,0 +1,38 @@
+.rock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.rock-button {
+  width: 90%;
+	display: block;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+	text-decoration: none;
+}
+.rock-button:hover {
+  background-color: gray;
+  color: white;
+}
+.rock-button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+.selected {
+	background-color: lightcoral;
+	color: red;
+}
+
+.rock-button .delete {
+  margin-left: 20px;
+}

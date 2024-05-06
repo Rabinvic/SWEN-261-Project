@@ -1,0 +1,19 @@
+.login-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-fields label {
+  margin-top: 10px;
+}
+
+.sign-in-up {
+  display: flex;
+  justify-content: space-between;
+}

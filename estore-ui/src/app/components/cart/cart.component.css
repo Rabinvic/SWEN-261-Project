@@ -1,0 +1,70 @@
+body {
+  margin: 0em;
+}
+
+.rock_button {
+	display: block;
+  width: 400px;
+  background-color: #eee;
+  border: 25px;
+  border-color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+	text-decoration: none;
+}
+div.rock_button:hover {
+  background-color: black;
+  color: white;
+}
+div.rock_button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+.selected {
+	background-color: lightcoral;
+	color: red;
+}
+
+.rocks-in-cart {
+  border: 2px solid #000;
+}
+
+.rocks-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f8d7da;
+  border: 2px solid #f5c6cb;
+  border-radius: 10px;
+  color: #4e3d3d;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #ff4d00;
+  font-size: 14px;
+  font-weight: normal;
+}

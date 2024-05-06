@@ -1,0 +1,35 @@
+<h2>Rocks</h2>
+<div *ngIf="userService.userIsAdmin()">
+  <label for="new-rock">Rock name: </label>
+  <input id="new-rock" #rockName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button
+		type="button"
+		class="add-button"
+		(click)="
+			add(rockName.value);
+			rockName.value='';
+		"
+	>
+    Add rock
+  </button>
+</div>
+<div class = "rock-grid">
+	<div class="rock-button" routerLink = "/detail/{{rock.id}}" *ngFor="let rock of rocks" >
+			<span class="badge">{{rock.id}}</span> {{rock.name}}
+
+    <button
+			*ngIf="userService.userIsAdmin()"
+			type="button"
+			class="delete"
+			title="delete rock"
+			(click)="delete(rock)"
+		>
+			x
+		</button>
+	</div>
+	<div *ngIf="rocks.length == 0">
+		No rocks available!
+	</div>
+</div>
